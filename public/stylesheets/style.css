@@ -1,0 +1,142 @@
+html > body {
+  background-color: #333;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+img {
+	position: relative;
+	z-index: 2;
+}
+
+body h1 {
+	height: 50px;
+	background: #fff;
+	border-radius: .2rem;
+	text-transform: uppercase;
+	font-size: 28px;
+	font-weight: 600;
+	position: relative;
+	top: 6.7rem;
+	left: -5rem;
+	line-height: 50px;
+  text-indent: 5rem;
+  letter-spacing: -2px;
+}
+
+.ranking-listagem.row {
+	margin-left: 1.5rem;
+	margin-right: 4rem;
+	border-radius: .2rem;
+	background: #fff;
+	margin-top: .5rem;
+}
+
+.ranking-card {
+	padding: 25px 15px;
+	cursor: pointer;
+}
+
+.ranking-card:hover,
+.ranking-card:nth-child(even):hover {
+	background: #bb3639;
+}
+
+.ranking-card:hover .card-titulo {
+	color: #fff;
+}
+
+.ranking-card:hover .card-descricao {
+	color: #000;
+}
+
+.ranking-card:hover .card-foto {
+	border-color: #fff;
+}
+
+.ranking-card:nth-child(even) {
+background: #f4f4f4;
+}
+
+.card-foto {
+	border-radius: 100%;
+	height: 60px;
+	width: 60px;
+	object-fit: cover;
+	border: 4px solid #bb3639;
+}
+
+.card-posicao {
+  color: #333;
+  position: relative;
+}
+
+.card-descricao {
+  color: #999;
+  margin-bottom: 0;
+  margin-left: 4.5rem;
+}
+
+.card-titulo {
+	font-size: 18px;
+	font-weight: 600;
+	color: #bb3639;
+  margin-bottom: 0;
+  margin-left: 4.5rem;
+  margin-top: .8rem;
+}
+
+.card-placar {
+	position: absolute;
+	left: 24rem;
+  width: 65%;
+}
+
+.card-titulo_gostei,
+.card-titulo_naogostei {
+	background-color: #bb3639;
+	color: #fff;
+	font-weight: 600;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 11px;
+	padding: 5px
+}
+
+.card-gostei,
+.card-naogostei {
+	background: #F4F4F4;
+	font-size: 23px;
+	color: #888;
+	font-weight: 600;
+	text-align: center;
+	padding: 5px 0
+}
+
+.card-titulo_gostei,
+.card-gostei {
+	border-right: 1px solid #999;
+	border-radius: 2px 0 0 2px
+}
+
+.card-naogostei,
+.card-titulo_naogostei {
+	border-left: 1px solid #ccc;
+	border-radius: 0 2px 2px 0
+}
+
+.card-gostei:before {
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-right-color: #f4f4f4;
+  content: "";
+  left: -20px;
+  position: absolute;
+	top: 2px
+}
+
+.card-gostei:after,
+.card-naogostei:after {
+	content: "%";
+}
